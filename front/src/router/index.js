@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 
 const Home = () => import(/* webpackChunkName: "home" */ '../views/Home')
 const Tag = () => import(/* webpackChunkName: "tag" */ '../views/Tag')
-console.log('sdsds')
-const Classify = () => import(/* webpackChunkName: "about" */ '../views/Home')
-const Home = () => import(/* webpackChunkName: "about" */ '../views/Home')
+const Classify = () =>
+  import(/* webpackChunkName: "about" */ '../views/Classify')
+const TimeLine = () =>
+  import(/* webpackChunkName: "about" */ '../views/TimeLine')
 
 Vue.use(VueRouter)
 
@@ -20,9 +21,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: Home
+    path: '/classify',
+    name: 'classify',
+    component: Classify
+  },
+  {
+    path: '/tag',
+    name: 'tag',
+    component: Tag
+  },
+  {
+    path: '/timeLine',
+    name: 'timeLine',
+    component: TimeLine
   }
 ]
 

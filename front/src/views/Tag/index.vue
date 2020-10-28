@@ -8,7 +8,7 @@
 // import Template from './components/Template'
 // import Api from '@/api'
 export default {
-  name: '', //small&camel
+  name: '', // small&camel
   props: {},
   components: {},
   data() {

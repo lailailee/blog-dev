@@ -7,7 +7,7 @@
 // import Template from './components/Template'
 // import Api from '@/api'
 export default {
-  name: '', //small&camel
+  name: '', // small&camel
   props: {},
   components: {},
   data() {
@@ -15,7 +15,10 @@ export default {
   },
   computed: {},
   watch: {},
-  created() {},
+  created() {
+    // const x = 1
+    // const x = 2
+  },
   mounted() {},
   methods: {}
 }
